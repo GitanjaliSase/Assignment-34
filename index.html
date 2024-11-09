@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment-34</title>
+    <style>
+     .s-container{
+          margin-left: 400px;
+ }
+ .btn,.btn1{
+            padding: 9px 20px;
+            background-color: #248f24;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .btn1{
+            background-color: red;
+        }
+        h1{
+            margin-left: 130px;
+            padding: 30px;
+            font-size: 40px;
+        }
+        #stud-name{
+            padding: 10px;
+            margin-left: 60px;
+            margin-bottom: 10px;
+            width: 300px;
+            border-radius: 8px;
+            border: 1px solid rgb(90, 94, 100);
+            background-color:aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="s-container">
+    <h1>Student Details👩‍🎓📝</h1>
+    <input type="text" placeholder="Enter Student Name" id="stud-name">
+    <button onclick="addStudent()" class="btn">Add Student</button>
+    <button onclick="removeStudent()" class="btn1">Remove</button>
+    <div id="students-container"></div>
+</div>
+</body>
+</html>
