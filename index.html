@@ -3,6 +3,9 @@
 <head>
     <title>Assignment-34</title>
     <style>
+        body{
+            background-color:azure;
+        }
      .s-container{
           margin-left: 400px;
  }
@@ -34,6 +37,15 @@
             border: 1px solid rgb(90, 94, 100);
             background-color:aliceblue;
         }
+        .s-card{
+            border: 1px solid black;
+            padding: 10px 20px;
+            margin-bottom: 15px;
+            margin-left: 50px;
+            border-radius: 20px;
+            background-color:bisque;
+            width: 50%;
+        }
     </style>
 </head>
 <body>
@@ -41,7 +53,7 @@
     <h1>Student Details👩‍🎓📝</h1>
     <input type="text" placeholder="Enter Student Name" id="stud-name">
     <button onclick="addStudent()" class="btn">Add Student</button>
-    <button onclick="removeStudent()" class="btn1">Remove</button>
+    <button onclick="removeStudent()" class="btn1">Remove</button><br><br>
     <div id="students-container"></div>
 </div>
 <script>
