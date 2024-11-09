@@ -74,7 +74,12 @@
             studnetInput.value = "";
             loadStudents()
         }
-
+        function removeStudent(){
+            const studentIndex = students.indexOf(studnetInput.value);
+            students.splice(studentIndex, 1);
+            studnetInput.value = "";
+            loadStudents()
+        }
 
 </script>
 </body>
