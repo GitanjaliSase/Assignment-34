@@ -44,5 +44,38 @@
     <button onclick="removeStudent()" class="btn1">Remove</button>
     <div id="students-container"></div>
 </div>
+<script>
+    const students = ["Gita", "Dipa"]
+    function getEmoji(){
+            const emoji = ['👩‍🎓','🙋‍♀️','🤴','🚵‍♀️','🧍‍♀️','🧍‍♂️','👩‍🏭','👩‍💼','👩‍🔬','👩‍🚒','🧕','👰‍♀️','🤵‍♀️','🤱','🦸‍♀️','🧚‍♀️','🧛‍♀️','🧜‍♀️','🧝‍♀️','🧖‍♀️'];
+
+            const min = 0;
+            const max = emoji.length-1;
+
+            const randamIndex = Math.floor(Math.random() * (max-min)) + min;
+            return emoji[randamIndex]
+        }
+        
+
+        function loadStudents(){
+            const studentContainer = document.getElementById("students-container");
+            studentContainer.innerHTML =""
+
+            for(let i = 0; i < students.length; i++){
+                studentContainer.innerHTML += `<div class="s-card"> ${getEmoji()} ${i+1} ${students[i]} </div>`;
+            }
+        }
+        loadStudents()
+
+        const studnetInput = document.getElementById("stud-name")
+
+        function addStudent(){
+            students.push(studnetInput.value)
+            studnetInput.value = "";
+            loadStudents()
+        }
+
+
+</script>
 </body>
 </html>
